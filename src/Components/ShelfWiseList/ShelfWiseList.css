@@ -1,0 +1,27 @@
+.BookListContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-gap: 1.5rem;
+}
+.BookListContainer li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  width: 12rem;
+  min-height: 15rem;
+}
+
+.BookListContainer li img {
+  height: 12rem;
+  width: 12rem;
+  align-self: center;
+}
+
+.HorizontalLine {
+  height: 1px;
+  background-color: grey;
+}

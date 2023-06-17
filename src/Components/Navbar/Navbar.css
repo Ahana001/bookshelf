@@ -1,0 +1,44 @@
+.SearchContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SearchBox {
+  color: black;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  height: 3rem;
+  width: 80%;
+  border-radius: 0.36rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+.SearchIcon {
+  margin-right: 1rem;
+}
+.SearchContainer input {
+  border: 0.1rem solid #eee;
+  height: 3rem;
+  width: 100%;
+  padding: 0.5rem 3.5rem;
+  box-sizing: border-box;
+  border-radius: 0.36rem;
+  font-size: 1.2rem;
+  outline: none;
+}
+.SearchBackArrow,
+.SearchClose {
+  position: absolute;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.SearchBackArrow {
+  left: 1rem;
+  top: 1rem;
+}
+.SearchClose {
+  right: 1rem;
+  top: 1rem;
+}
