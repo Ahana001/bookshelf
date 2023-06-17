@@ -12,7 +12,7 @@ import { DataContext } from "../../Context/DataContext";
 export function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
-  const { dispatch } = useContext(DataContext);
+  const { dispatch, state } = useContext(DataContext);
 
   if (location.pathname === "/404") {
     return null;
@@ -38,6 +38,7 @@ export function Navbar() {
         <BiArrowBack onClick={() => navigate(-1)} className="SearchBackArrow" />
         <input
           type="text"
+          value={state.filter.search}
           onChange={(event) => {
             dispatch({
               type: ActionTypes.SetFilter,
